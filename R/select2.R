@@ -15,10 +15,10 @@
 #' df <- data.frame(a = 1:5, b = 6:10, c = 11:15)
 #' 
 #' # Select by name
-#' select(df, c("a", "c"))
+#' select2(df, c("a", "c"))
 #'
 #' # Select by position
-#' select(df, c(1, 3))
+#' select2(df, c(1, 3))
 #'
 #' @export
 select2 <- function(data, vars) {
