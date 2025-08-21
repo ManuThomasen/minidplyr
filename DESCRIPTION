@@ -1,9 +1,9 @@
 Package: minidplyr
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: minidplyr
+Version: 0.0.3.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Manu", "Thomasen", , "manuth@ph.au.dk", role = c("aut", "cre"))
+Description: This package is used to learn how to develop a R package.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -12,3 +12,6 @@ URL: https://github.com/ManuThomasen/minidplyr
 BugReports: https://github.com/ManuThomasen/minidplyr/issues
 Imports: 
     dplyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

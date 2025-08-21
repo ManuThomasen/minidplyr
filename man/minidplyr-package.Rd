@@ -4,9 +4,9 @@
 \name{minidplyr-package}
 \alias{minidplyr}
 \alias{minidplyr-package}
-\title{minidplyr: What the Package Does (One Line, Title Case)}
+\title{minidplyr: minidplyr}
 \description{
-What the package does (one paragraph).
+This package is used to learn how to develop a R package.
 }
 \seealso{
 Useful links:
@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com}
+\strong{Maintainer}: Manu Thomasen \email{manuth@ph.au.dk}
 
 }
 \keyword{internal}

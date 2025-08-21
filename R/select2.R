@@ -30,5 +30,26 @@ select2 <- function(data, vars) {
     stop("`vars` must be a character vector (names) or numeric vector (positions).")
   }
   
+  # Prevent empty selections
+  if (length(vars) == 0) {
+    stop("`vars` must specify at least one column.")
+  }
+  
+  # If numeric: check bounds
+  if (is.numeric(vars)) {
+    if (any(vars < 1 | vars > ncol(data))) {
+      stop("subscript out of bounds|undefined columns selected.")
+    }
+  }
+  
+  # If character: check existence
+  if (is.character(vars)) {
+    missing_vars <- setdiff(vars, names(data))
+    if (length(missing_vars) > 0) {
+      stop("undefined columns selected")
+    }
+  }
+  
   data[, vars, drop = FALSE]
 }
+
