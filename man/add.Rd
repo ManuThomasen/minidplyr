@@ -7,10 +7,19 @@
 add(a, b)
 }
 \arguments{
-\item{a}{}
+\item{a}{a number}
 
-\item{b}{}
+\item{b}{a number}
+}
+\value{
+the sum of a and b 'a + b'
 }
 \description{
-Title
+More description
+}
+\details{
+More details
+}
+\examples{
+add(1,2)
 }
